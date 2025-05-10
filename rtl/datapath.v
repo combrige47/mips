@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2017/11/02 15:12:22
-// Design Name: 
-// Module Name: datapath
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module datapath(
 	input wire clk,rst,
 	//fetch stage
@@ -43,7 +21,11 @@ module datapath(
 	input wire[31:0] readdataM,
 	//writeback stage
 	input wire memtoregW,
-	input wire regwriteW
+	input wire regwriteW,
+
+	//debug
+	input wire [4:0] debug_addr,           // 输入要读取的寄存器号
+	output wire [31:0] debug_data          // 输出该寄存器的�??
     );
 	
 	//fetch stage
@@ -102,7 +84,7 @@ module datapath(
 		jumpD,pcnextFD);
 
 	//regfile (operates in decode and writeback)
-	regfile rf(clk,regwriteW,rsD,rtD,writeregW,resultW,srcaD,srcbD);
+	regfile rf(clk,regwriteW,rsD,rtD,writeregW,resultW,srcaD,srcbD,debug_addr,debug_data);
 
 	//fetch stage logic
 	pc #(32) pcreg(clk,rst,~stallF,pcnextFD,pcF);

@@ -1,32 +1,12 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2017/11/07 10:58:03
-// Design Name: 
-// Module Name: mips
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module mips(
 	input wire clk,rst,
 	output wire[31:0] pcF,
 	input wire[31:0] instrF,
 	output wire memwriteM,
 	output wire[31:0] aluoutM,writedataM,
-	input wire[31:0] readdataM 
+	input wire[31:0] readdataM,
+	input wire [4:0] debug_addr,           // 输入要读取的寄存器号
+	output wire [31:0] debug_data          // 输出该寄存器的值
     );
 	
 	wire [5:0] opD,functD;
@@ -76,7 +56,11 @@ module mips(
 		readdataM,
 		//writeback stage
 		memtoregW,
-		regwriteW
+		regwriteW,
+
+		//debug
+		debug_addr,           // 输入要读取的寄存器号
+		debug_data          // 输出该寄存器的�??
 	    );
 	
 endmodule
