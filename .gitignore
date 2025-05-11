@@ -1,0 +1,5 @@
+mycpu.sim/
+*.log
+*.jou
+*.str
+

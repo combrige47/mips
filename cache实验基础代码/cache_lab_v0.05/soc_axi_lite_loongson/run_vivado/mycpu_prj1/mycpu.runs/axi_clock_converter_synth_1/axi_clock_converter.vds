@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 11 10:27:36 2025
+# Process ID: 2164
+# Current directory: C:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/run_vivado/mycpu_prj1/mycpu.runs/axi_clock_converter_synth_1
+# Command line: vivado.exe -log axi_clock_converter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_clock_converter.tcl
+# Log file: C:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/run_vivado/mycpu_prj1/mycpu.runs/axi_clock_converter_synth_1/axi_clock_converter.vds
+# Journal file: C:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/run_vivado/mycpu_prj1/mycpu.runs/axi_clock_converter_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_clock_converter.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 438.207 ; gain = 157.879
+Command: synth_design -top axi_clock_converter -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1026.031 ; gain = 234.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/synth/axi_clock_converter.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_19_axi_clock_converter' [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:654]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ACLK_RATIO bound to: 1 - type: integer 
+	Parameter C_M_AXI_ACLK_RATIO bound to: 2 - type: integer 
+	Parameter C_AXI_IS_ACLK_ASYNC bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_LIGHT_WT bound to: 0 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_LUTRAM_ASYNC bound to: 12 - type: integer 
+	Parameter P_SI_LT_MI bound to: 1'b1 
+	Parameter P_ROUNDING_OFFSET bound to: 0 - type: integer 
+	Parameter P_ACLK_RATIO bound to: 2 - type: integer 
+	Parameter C_AWUSER_RIGHT bound to: 0 - type: integer 
+	Parameter C_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AWQOS_RIGHT bound to: 0 - type: integer 
+	Parameter C_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter C_AWREGION_RIGHT bound to: 4 - type: integer 
+	Parameter C_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter C_AWPROT_RIGHT bound to: 4 - type: integer 
+	Parameter C_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter C_AWCACHE_RIGHT bound to: 7 - type: integer 
+	Parameter C_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter C_AWLOCK_RIGHT bound to: 11 - type: integer 
+	Parameter C_AWLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter C_AWBURST_RIGHT bound to: 13 - type: integer 
+	Parameter C_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter C_AWSIZE_RIGHT bound to: 15 - type: integer 
+	Parameter C_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter C_AWLEN_RIGHT bound to: 18 - type: integer 
+	Parameter C_AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter C_AWADDR_RIGHT bound to: 22 - type: integer 
+	Parameter C_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AWID_RIGHT bound to: 54 - type: integer 
+	Parameter C_AWID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AW_WIDTH bound to: 58 - type: integer 
+	Parameter C_FIFO_AW_WIDTH bound to: 62 - type: integer 
+	Parameter C_WUSER_RIGHT bound to: 0 - type: integer 
+	Parameter C_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WLAST_RIGHT bound to: 0 - type: integer 
+	Parameter C_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter C_WSTRB_RIGHT bound to: 1 - type: integer 
+	Parameter C_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WDATA_RIGHT bound to: 5 - type: integer 
+	Parameter C_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_WID_RIGHT bound to: 37 - type: integer 
+	Parameter C_WID_WIDTH bound to: 4 - type: integer 
+	Parameter C_W_WIDTH bound to: 41 - type: integer 
+	Parameter C_FIFO_W_WIDTH bound to: 41 - type: integer 
+	Parameter C_BUSER_RIGHT bound to: 0 - type: integer 
+	Parameter C_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_BRESP_RIGHT bound to: 0 - type: integer 
+	Parameter C_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter C_BID_RIGHT bound to: 2 - type: integer 
+	Parameter C_BID_WIDTH bound to: 4 - type: integer 
+	Parameter C_B_WIDTH bound to: 6 - type: integer 
+	Parameter C_FIFO_B_WIDTH bound to: 6 - type: integer 
+	Parameter C_ARUSER_RIGHT bound to: 0 - type: integer 
+	Parameter C_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_ARQOS_RIGHT bound to: 0 - type: integer 
+	Parameter C_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARREGION_RIGHT bound to: 4 - type: integer 
+	Parameter C_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter C_ARPROT_RIGHT bound to: 4 - type: integer 
+	Parameter C_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter C_ARCACHE_RIGHT bound to: 7 - type: integer 
+	Parameter C_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARLOCK_RIGHT bound to: 11 - type: integer 
+	Parameter C_ARLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARBURST_RIGHT bound to: 13 - type: integer 
+	Parameter C_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARSIZE_RIGHT bound to: 15 - type: integer 
+	Parameter C_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter C_ARLEN_RIGHT bound to: 18 - type: integer 
+	Parameter C_ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARADDR_RIGHT bound to: 22 - type: integer 
+	Parameter C_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ARID_RIGHT bound to: 54 - type: integer 
+	Parameter C_ARID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AR_WIDTH bound to: 58 - type: integer 
+	Parameter C_FIFO_AR_WIDTH bound to: 62 - type: integer 
+	Parameter C_RUSER_RIGHT bound to: 0 - type: integer 
+	Parameter C_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_RLAST_RIGHT bound to: 0 - type: integer 
+	Parameter C_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter C_RRESP_RIGHT bound to: 1 - type: integer 
+	Parameter C_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter C_RDATA_RIGHT bound to: 3 - type: integer 
+	Parameter C_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RID_RIGHT bound to: 35 - type: integer 
+	Parameter C_RID_WIDTH bound to: 4 - type: integer 
+	Parameter C_R_WIDTH bound to: 39 - type: integer 
+	Parameter C_FIFO_R_WIDTH bound to: 39 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:690]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:691]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:749]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (1#1) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1226]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (2#1) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized1' [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized1' (2#1) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (7#1) [F:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_19_axi_clock_converter' (22#1) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/hdl/axi_clock_converter_v2_1_vl_rfs.v:654]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (23#1) [c:/Users/HP/OneDrive/桌面/stu/计组/组成与结构实验5/cache实验基础代码/cache_lab_v0.05/soc_axi_lite_loongson/rtl/xilinx_ip/axi_clock_converter/synth/axi_clock_converter.v:58]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port ALMOST_FULL_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port PROG_FULL_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port ALMOST_EMPTY_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port PROG_EMPTY_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_ACK_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port VALID_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port OVERFLOW_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port UNDERFLOW_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port WR_DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port RD_DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port RD_DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port RD_DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port RD_DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port RD_DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design output_blk__parameterized2 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_as has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port SRST_FULL_FF
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RAM_RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port RD_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port RD_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port RD_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design rd_status_flags_as has unconnected port RD_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design rd_bin_cntr has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_BUSY
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RAM_WR_EN
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design rd_logic has unconnected port ALMOST_FULL_FB
+WARNING: [Synth 8-3331] design rd_logic has unconnected port FULL
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design clk_x_pntrs has unconnected port WR_RST
+WARNING: [Synth 8-3331] design clk_x_pntrs has unconnected port RD_RST
+WARNING: [Synth 8-3331] design dmem__parameterized2 has unconnected port SRST
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port FAB_REGOUT_EN
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port SFT_RST
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port SRST
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design memory__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design input_blk__parameterized2 has unconnected port CLK
+WARNING: [Synth 8-3331] design input_blk__parameterized2 has unconnected port INT_CLK
+WARNING: [Synth 8-3331] design input_blk__parameterized2 has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design input_blk__parameterized2 has unconnected port PROG_EMPTY_THRESH[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
