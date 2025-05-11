@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat May 10 16:31:58 2025
+-- Date        : Sat May 10 18:38:19 2025
 -- Host        : LAPTOP-D43RM26T running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub F:/vivado/step_into_mips-lab_4/lab_4/rtl/ip/data_mem/data_mem_stub.vhdl
 -- Design      : data_mem
@@ -18,7 +18,13 @@ entity data_mem is
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    douta : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    clkb : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    web : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
 
 end data_mem;
@@ -27,7 +33,7 @@ architecture stub of data_mem is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clka,ena,wea[3:0],addra[9:0],dina[31:0],douta[31:0]";
+attribute black_box_pad_pin of stub : architecture is "clka,ena,wea[3:0],addra[9:0],dina[31:0],douta[31:0],clkb,enb,web[3:0],addrb[9:0],dinb[31:0],doutb[31:0]";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "blk_mem_gen_v8_4_4,Vivado 2019.2";
 begin
