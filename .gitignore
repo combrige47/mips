@@ -2,4 +2,6 @@ mycpu.sim/
 *.log
 *.jou
 *.str
+*.xpr
+mycpu.runs/
 
